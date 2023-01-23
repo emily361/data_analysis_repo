@@ -6,16 +6,16 @@ date: "2023-01-23"
 
 Initial fastqc analysis of cemm samples locally on computer
 ```{bash}
-cd /Users/emilygrubb/fastqc/unzipped_files
-fastqc *fastq.gz -o /Users/emilygrubb/fastqc/fastqc_output
+cd /Users/emilygrubb/fastqc/unzipped_files_cemm
+fastqc *fastq.gz -o /Users/emilygrubb/fastqc/fastqc_output_cemm
 ```
 
 MultiQC analysis that allows you to compare fastqc outputs from many samples
 ```{bash}
-cd /Users/emilygrubb/fastqc/fastqc_output
+cd /Users/emilygrubb/fastqc/fastqc_output_cemm
 multiqc . 
 ```
-
+Fastqc results showed no adapter present in the samples so no need to trim
 
 ## R Markdown
 
