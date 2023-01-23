@@ -4,9 +4,18 @@ output: html_document
 date: "2023-01-23"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+Initial fastqc analysis of cemm samples locally on computer
+```{bash}
+cd /Users/emilygrubb/fastqc/unzipped_files
+fastqc *fastq.gz -o /Users/emilygrubb/fastqc/fastqc_output
 ```
+
+MultiQC analysis that allows you to compare fastqc outputs from many samples
+```{bash}
+cd /Users/emilygrubb/fastqc/fastqc_output
+multiqc . 
+```
+
 
 ## R Markdown
 
