@@ -17,6 +17,14 @@ multiqc .
 ```
 Fastqc results showed no adapter present in the samples so no need to trim
 
+Fastqc analysis on the 3 samples that had been copied accross (all SF samples)
+```{bash}
+cd /Users/emilygrubb/fastqc/unzipped_files_novogene
+fastqc *fq.gz -o /Users/emilygrubb/fastqc/fastqc_output_novogene
+```
+
+
+
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
